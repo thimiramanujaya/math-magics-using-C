@@ -50,5 +50,24 @@ int main() {
 	else {
 		printf("\n\n   Oops!! You've might typed incorrect values :( \n\n   Let's try on next time :) \n");
 	}
+	
+	char r;
+	
+	printf("\n\n  (: Am I right? (Type y if yes, if not type n) : ");
+	scanf(" %c",&r);
+	
+	switch(r) {
+		case 'y':
+			printf("\n  Happy to hear that mate :) Thank you for Enjoying Magic ! \n");
+		break;
+		
+		case 'n':
+			printf("\n  Sorry to hear that mate :( Please revise your values or check whether your calculation is right ! \n");
+		break;
+		
+		default:
+			printf("\n  Oops!! I cannot identify your input. Let's try on next time :) \n");
+		break;
+	}
 
 }
